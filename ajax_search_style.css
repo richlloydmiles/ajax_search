@@ -1,0 +1,2 @@
+.search_area{position:relative}.search_area .spinner{background-size:16px 16px;display:none;float:right;opacity:.7;filter:alpha(opacity=70);width:16px;height:16px;margin:5px 5px 0;position:absolute;top:0;right:0}.search_area #result{border:1px solid #e02200;border-top:0}.search_area #result>div{padding:10px}.search_area #search_target{background-color:tomato}.search_area .search_result{cursor:pointer}.search_area .search_result:hover{background-color:#ff8e7a !important}
+/*# sourceMappingURL=ajax_search_style.css.map */
