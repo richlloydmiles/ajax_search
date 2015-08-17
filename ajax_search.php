@@ -178,33 +178,3 @@ function ajax_search_remove_database() {
 register_deactivation_hook( __FILE__, 'ajax_search_remove_database' );
 
 
-
-
-function pagination($value) {
-	$string = '1,2,3,4,5,6,9';
-	$prev = $value - 1;
-	$next = $value + 1;
-
-
-	preg_match_all('!\d+!', $string, $numbers);
-	$max = max($numbers[0]);
-	$min = min($numbers[0]);
-
-	if ($value > $max || $value < $min) {
-		return new WP_Error( 'broke', 'Invalid Numeric Value' );
-	}
-	if ($prev < $min) {
-		$prev = null;
-	}
-
-	if ($next > $max ) {
-		$next = null;
-	}
-
-	$pagination = array('prev'=> $prev , 'next' => $next);
-
-	// if ($is_amp > -1) {
-	// 	if ($_GET['page'] == '2') {
-	return $pagination;
-}
-
